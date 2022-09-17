@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.js", "../lib/**/*.blade.php"],
+  content: ["./src/**/*.{js,vue}", "../lib/**/*.blade.php"],
   darkMode: 'class',
   theme: {
     extend: {
@@ -20,5 +20,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [],
 }

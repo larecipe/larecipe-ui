@@ -1,3 +1,15 @@
+::-webkit-scrollbar, .sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track, .sidebar::-webkit-scrollbar-track {
+    @apply bg-slate-200 dark:bg-slate-500;
+}
+
+::-webkit-scrollbar-thumb, .sidebar::-webkit-scrollbar-thumb {
+    @apply bg-slate-400 dark:bg-slate-200 rounded;
+}
+
 .sidebar {
     @apply bg-sidebar-light dark:bg-sidebar-dark border-r border-slate-100 dark:border-none w-64 fixed z-10 inset-y-0 left-0 overflow-y-auto pt-28 pb-16 text-sm font-thin;
     transition: padding-left 0.1s;
@@ -20,7 +32,7 @@
             }
 
             > ul {
-                @apply mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200;
+                @apply border-l-2 border-slate-100 dark:border-slate-800 mt-4 space-y-4 lg:border-slate-200;
 
                 > li {
                     @apply relative;
@@ -37,3 +49,34 @@
         }
     }
 }
+
+.table-of-contents-sidebar-wrapper {
+    @apply xl:absolute xl:top-24 bg-slate-100 xl:bg-transparent rounded-lg p-4 xl:p-0 right-0 text-sm;
+
+    .table-of-contents-sidebar {
+        @apply xl:fixed xl:ml-16;
+
+        h2 {
+            @apply font-medium mb-2 mt-0;
+        }
+
+        .table-of-contents {
+            li {
+                @apply py-2;
+                
+                a {
+                    @apply text-slate-800 dark:text-slate-400 no-underline;
+                }
+
+                a.active {
+                    @apply text-primary;
+                }
+
+                ul {
+                    @apply mt-2 pl-4;
+                }
+            }
+        }
+    }
+}
+

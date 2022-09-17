@@ -1,17 +1,13 @@
 .documentation {
-    @apply bg-documentation-light dark:bg-documentation-dark static pt-28 pb-16 pl-80 w-3/4;
+    @apply bg-documentation-light dark:bg-documentation-dark relative pt-28 pb-28 pl-80 w-3/4;
     transition: padding-left 0.1s;
 
     &.expanded {
         @apply pl-20;
     }
  
-    a{
-        @apply text-sky-500 border-b border-dashed border-sky-500;
-    }
-
-    h1:first-of-type {
-        @apply font-bold mb-4 text-3xl text-slate-800 dark:text-slate-200;
+    a {
+        @apply text-primary underline;
     }
 
     h2:hover .heading-permalink,
@@ -24,13 +20,17 @@
     }
 
     .heading-permalink {
-        @apply opacity-0 absolute pr-2 border-b-0;
+        @apply opacity-0 absolute pr-2;
         transform: translate(-100%);
         text-decoration: none;
     }
 
+    h1:first-of-type {
+        @apply font-bold text-3xl mb-4 text-slate-800 dark:text-slate-200;
+    }
+
     h2 {
-        @apply mt-6 mb-4 text-xl text-slate-800 dark:text-slate-200;
+        @apply mt-10 mb-4 text-2xl text-slate-800 dark:text-slate-200;
 
         a, a:hover {
             @apply text-gray-700 no-underline;
@@ -38,11 +38,11 @@
     }
 
     h3 {
-        @apply mt-6 mb-4 text-2xl text-slate-800 dark:text-slate-200;
+        @apply mt-6 mb-4 text-xl text-slate-800 dark:text-slate-200;
     }
 
     p {
-        @apply font-thin leading-relaxed text-slate-600 dark:text-slate-400 mb-4;
+        @apply font-thin leading-loose text-slate-600 dark:text-slate-400 mb-4;
     }
 
     hr {
@@ -53,6 +53,10 @@
         max-width: 100%;
     }
 
+    pre{
+        @apply font-thin;
+    }
+
     :not(pre) > code {
         @apply bg-gray-200 px-2 rounded text-primary leading-normal;
         padding-top: 0.1rem;
@@ -61,13 +65,18 @@
     }
 
     ul > li , ol > li {
-        @apply py-2;
+        @apply py-2 text-slate-600 dark:text-slate-400;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.3);
+        @apply mr-2;
     }
 }
 
 @media (max-width: 780px) {
     .documentation {
-        padding: 0 40px !important;
+        padding: 0 1em !important;
         @apply w-full;
     }
 }

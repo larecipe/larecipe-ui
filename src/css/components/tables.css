@@ -1,16 +1,11 @@
 table {
-    @apply shadow-lg bg-white w-full p-4 my-4;
-    transition: box-shadow 0.1s;
-
-    &:hover {
-        @apply shadow;
-    }
+    @apply bg-white dark:bg-slate-900 w-full dark:text-slate-300 p-4 my-6;
 
     tr, td, th {
-        @apply border border-gray-400;
+        @apply border border-slate-200 dark:border-slate-700;
 
         &:hover {
-            @apply bg-gray-100;
+            @apply bg-slate-100 dark:bg-slate-800;
         }
     }
 

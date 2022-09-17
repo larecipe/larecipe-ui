@@ -9,3 +9,5 @@ if(token) {
 require('./vendors/prism.js');
 Prism.plugins.autoloader.use_minified = true;
 Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/';
+
+require('./components/table-of-contents.js');
