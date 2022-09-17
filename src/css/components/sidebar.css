@@ -2,6 +2,10 @@
     @apply bg-sidebar-light dark:bg-sidebar-dark border-r border-slate-100 dark:border-none w-64 fixed z-10 inset-y-0 left-0 overflow-y-auto pt-28 pb-16 text-sm font-thin;
     transition: padding-left 0.1s;
 
+    .heading-permalink {
+        @apply hidden;
+    }
+
     &.is-hidden {
         left: -16rem;
     }

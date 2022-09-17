@@ -17,8 +17,8 @@ module.exports = {
         'sidebar-dark': 'var(--sidebar-dark)',
         'documentation-dark': 'var(--documentation-dark)',
         'navbar-dark': 'var(--navbar-dark)',
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
