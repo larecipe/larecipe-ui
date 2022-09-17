@@ -15,6 +15,7 @@
     @import "./components/buttons";
     @import "./components/tables";
     @import "./components/progress-bar";
+    @import "./vendors/prism";
 }
 
 @tailwind utilities;

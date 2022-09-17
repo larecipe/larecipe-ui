@@ -5,7 +5,7 @@
     &.expanded {
         @apply pl-20;
     }
-
+ 
     a{
         @apply text-sky-500 border-b border-dashed border-sky-500;
     }
@@ -24,7 +24,7 @@
     }
 
     .heading-permalink {
-        @apply opacity-0 absolute pr-6 border-b-0;
+        @apply opacity-0 absolute pr-2 border-b-0;
         transform: translate(-100%);
         text-decoration: none;
     }
