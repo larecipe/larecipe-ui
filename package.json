@@ -1,6 +1,6 @@
 {
   "name": "@larecipe/larecipe-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "UI for LaRecipe package",
   "main": "src/js/app.js",
   "scripts": {
