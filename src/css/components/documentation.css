@@ -1,9 +1,9 @@
 #documentation {
-    @apply bg-documentation-light dark:bg-documentation-dark relative pt-28 pb-28 pl-80 w-3/4;
+    @apply bg-documentation-light dark:bg-documentation-dark relative pt-28 pb-28 pl-20 w-3/4;
     transition: padding-left 0.1s;
 
-    &.expanded {
-        @apply pl-20;
+    &.shrink {
+        @apply pl-80;
     }
  
     a {
@@ -74,9 +74,9 @@
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1200px) {
     #documentation {
         padding: 0 1em !important;
-        @apply w-full;
+        @apply w-full pt-28 !important;
     }
 }

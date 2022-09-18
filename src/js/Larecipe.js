@@ -11,7 +11,26 @@ export default class LaRecipe {
   }
 
   init() {
-    this.app = createApp();
+    this.app = createApp({
+      data() {
+        return {
+          sidebar: typeof Storage !== "undefined" &&
+          localStorage.getItem("larecipeSidebar") !== null ? localStorage.getItem("larecipeSidebar") == "true" : false
+        }
+      },
+      watch: {
+        sidebar: function() {
+          localStorage.setItem("larecipeSidebar", this.sidebar);
+        }
+      },
+      mounted() {
+        document.getElementById("documentation").addEventListener("click", () => {
+          if (window.matchMedia("(max-width: 960px)").matches) {
+            this.sidebar = false;
+          }
+        });
+      }
+    });
 
     return this;
   }

@@ -1,18 +1,13 @@
-.alert {
-    @apply relative bg-primary shadow-lg my-8 p-6 rounded-lg overflow-hidden;
-    transition: box-shadow 0.1s;
+blockquote, .alert {
+    @apply relative bg-primary my-8 p-6 rounded-lg overflow-hidden;
 
-    &:hover {
-        @apply shadow;
-    }
-
-    &.is-info { @apply bg-info; }
-    &.is-success { @apply bg-success; }
-    &.is-danger { @apply bg-danger; }
-    &.is-warning { @apply bg-warning; }
+    &.info { @apply bg-info; }
+    &.success { @apply bg-success; }
+    &.danger { @apply bg-danger; }
+    &.warning { @apply bg-warning; }
 
     p {
-        @apply pl-8 mb-0 text-white;
+        @apply pl-8 mb-0 text-white !important;
     }
 
     .icon {
