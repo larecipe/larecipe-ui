@@ -1,4 +1,5 @@
 import './components/table-of-contents.js';
+import './components/sidebar.js';
 import './vendors/prism.js';
 import axios from 'axios';
 
