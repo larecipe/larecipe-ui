@@ -7,7 +7,7 @@ blockquote, .alert {
     &.warning { @apply bg-warning; }
 
     p {
-        @apply pl-8 mb-0 text-white !important;
+        @apply mb-0 text-white !important;
     }
 
     .icon {
