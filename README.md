@@ -7,11 +7,7 @@
 </h2>
 
 
-<h6 align="center">
-  Extracted universal UI package for LaRecipe
-</h6>
-
-This package is available on NPM (https://www.npmjs.com/package/@larecipe/larecipe-ui) and ingtegrated already in the LaRecipe packages for Laravel (https://github.com/saleem-hadad/larecipe) and .Net (https://github.com/larecipe/larecipe-dotnet).
+This package is available on [NPM](https://www.npmjs.com/package/@larecipe/larecipe-ui) and ingtegrated already in the LaRecipe packages for [Laravel](https://github.com/saleem-hadad/larecipe) and [.Net](https://github.com/larecipe/larecipe-dotnet).
 
 The motivation behind extracting the UI into its own package is that now we have to support two different backend framework implementations and the UI should be the same. If you're planning to start a new backend integration for other frameworks please reach out to me (contact[at]saleem.dev) in case you need any support or onboarding to the development process.
 
